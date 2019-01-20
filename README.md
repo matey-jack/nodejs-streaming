@@ -26,6 +26,9 @@ To run the new thing:
     cd pure
     node --max-old-space-size=300 .\readline-stream.js ..\data\itcont.txt
     
+The original comparison between EventStream and readline() now seems pointless, 
+because most of the time and memory was used due to the algorithmic architecture
+
 
 # Doing this on Windows
 
@@ -109,7 +112,7 @@ and beyond.)
 
 https://nodejs.org/dist/latest-v10.x/docs/api/readline.html
 
-First insight: `readline` does not have the file size limit of `fs.readFile`!
+First insight from trying it out: `readline` does not have the file size limit that `fs.readFile` has on Windows!
 
 # Content of forked Readme.md below
 

@@ -35,6 +35,7 @@ function getFirstName(name) {
 }
 
 function getFirstNameRegEx(name) {
+    // idea for this taken from [Stuart Marks](https://stuartmarks.wordpress.com/2019/01/11/processing-large-files-in-java/)
     // the documentation assures me that a regex in this form is compiled at parse-time
     // and is indeed a constant in memory.
     const regex = /, (\S+)/;
